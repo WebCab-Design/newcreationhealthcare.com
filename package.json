@@ -1,0 +1,23 @@
+{
+  "name": "newcreationhealthcare.com",
+  "version": "1.0.0",
+  "description": "newcreationhealthcare.com",
+  "main": "index.js",
+  "scripts": {
+    "serve": "muleify serve -w src dist",
+    "build": "rm -r docs/* && muleify pack src docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WebCab-Design/newcreationhealthcare.com.git"
+  },
+  "author": "WebCab",
+  "license": "SEE LICENSE IN LICENSE",
+  "bugs": {
+    "url": "https://github.com/WebCab-Design/newcreationhealthcare.com/issues"
+  },
+  "homepage": "https://github.com/WebCab-Design/newcreationhealthcare.com#readme",
+  "dependencies": {
+    "flexboxgrid": "^6.3.1"
+  }
+}
