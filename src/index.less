@@ -31,33 +31,37 @@ a:hover {
 h1, h2, h3, h4 {
 	margin: 1rem 0;
 }
+ul {
+	list-style: none;
+}
 
 .connect {
 	top: 0;
 	width: 100%;
 	position: fixed;
+	background-color: rgba(0, 0, 0, 0.1);
 }
-.connect > div > a {
+.connect a {
 	padding: 1rem;
 }
-.media > a {
+.media a {
 	color: black;
 	font-weight: bold;
-	background-color: lightgray;
+	background-color: whitesmoke;
 }
-.media > a:hover {
+.media a:hover {
 	color: white;
 }
-.media > a:nth-child(1):hover {
+.media a:nth-child(1):hover {
 	background: #55acee;
 }
-.media > a:nth-child(2):hover {
+.media a:nth-child(2):hover {
 	background: #3b5998;
 }
-.media > a:nth-child(3):hover {
+.media a:nth-child(3):hover {
 	background: #d94a39;
 }
-.phone > a {
+.phone a {
 	font-weight: bold;
 }
 .navigation {
@@ -81,6 +85,7 @@ h1, h2, h3, h4 {
 	border: solid 1px black;
 }
 .button:hover {
+	color: white;
 	text-decoration: none;
 	background-color: black;
 }
@@ -94,4 +99,31 @@ h1, h2, h3, h4 {
 }
 .paralax > div {
 	padding: 10rem 0;
+}
+.tiles {
+	padding: 1rem;
+}
+.tiles > div > div {
+	margin: 0.5rem;
+	padding: 3rem;
+	background-color: whitesmoke;
+}
+.tiles-2 > div > div {
+	padding: 3rem;
+}
+.tiles-2 > div > div:nth-child(1) {
+	background-color: lightgray;
+}
+.tiles-2 > div > div:nth-child(2) {
+	background-color: whitesmoke;
+}
+.paragraph {
+	padding: 3rem;
+}
+
+.copyright {
+	background-color: whitesmoke;
+}
+.copyright a {
+	padding: 1rem;
 }
