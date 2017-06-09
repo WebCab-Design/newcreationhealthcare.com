@@ -81,16 +81,21 @@ ul {
 .button {
 	width: auto;
 	margin: 1rem 0;
+	cursor: pointer;
 	font-weight: bold;
 	border-radius: 3px;
 	padding: 0.5rem 1rem;
 	display: inline-block;
 	border: solid 1px black;
+	background-color: transparent;
 }
 .button:hover {
 	color: white;
 	text-decoration: none;
 	background-color: black;
+}
+.top {
+	padding: 3rem;
 }
 .paralax {
 	-webkit-background-size: cover;
@@ -103,6 +108,7 @@ ul {
 .paralax > div {
 	padding: 10rem 0;
 }
+
 .tiles {
 	padding: 1rem;
 }
@@ -111,22 +117,40 @@ ul {
 	padding: 3rem;
 	background-color: whitesmoke;
 }
-.tiles-2 > div > div {
-	padding: 3rem;
-}
-.tiles-2 > div > div:nth-child(1) {
-	background-color: lightgray;
-}
-.tiles-2 > div > div:nth-child(2) {
-	background-color: whitesmoke;
-}
+
 .paragraph {
 	padding: 3rem;
 }
 
+// contact
+.contact {
+	margin: 1rem;
+    padding: 1rem;
+}
+.contact input, .contact textarea {
+	width: 100%;
+	margin: 0.5rem;
+	padding: 0.5rem;
+}
+.contact textarea {
+	max-width: 100%;
+	transition: none;
+	-ms-transition: none;
+	-moz-transition: none;
+	-webkit-transition: none;
+}
+
 .copyright {
+	padding: 1rem;
 	background-color: whitesmoke;
 }
-.copyright a {
-	padding: 1rem;
+
+footer > div:nth-child(1) > div {
+	padding: 3rem;
+}
+footer > div:nth-child(1) > div:nth-child(1) {
+	background-color: lightgray;
+}
+footer > div:nth-child(1) > div:nth-child(2) {
+	background-color: whitesmoke;
 }
