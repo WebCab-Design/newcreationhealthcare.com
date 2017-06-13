@@ -1,3 +1,9 @@
+@green: #6dbf52;
+@black: #444;
+@gray: #898989;
+@transparent-gray: rgba(137, 137, 137, 0.1);
+
+
 html {
   box-sizing: border-box;
 }
@@ -21,6 +27,17 @@ header {
 }
 main {
 }
+h1 {
+	color: @green;
+	font-size: 2.5rem;
+
+}
+h2 {
+	font-size: 2rem;
+}
+p {
+	color: @black;
+}
 a {
 	text-decoration: none;
 	display: inline-block;
@@ -34,12 +51,15 @@ h1, h2, h3, h4 {
 ul {
 	list-style: none;
 }
-
+hr {
+	border-top: solid 1px white;
+	border-bottom: solid 1px @green;
+}
 .connect {
 	top: 0;
 	width: 100%;
 	position: fixed;
-	background-color: rgba(0, 0, 0, 0.1);
+	background-color: @transparent-gray;
 }
 .connect a {
 	padding: 1rem;
@@ -83,7 +103,7 @@ ul {
 	margin: 1rem 0;
 	cursor: pointer;
 	font-weight: bold;
-	border-radius: 3px;
+	border-radius: 1px;
 	padding: 0.5rem 1rem;
 	display: inline-block;
 	border: solid 1px black;
@@ -120,6 +140,10 @@ ul {
 
 .paragraph {
 	padding: 3rem;
+
+	> div > div {
+		vertical-align: middle;
+	}
 }
 
 // contact
@@ -142,15 +166,31 @@ ul {
 
 .copyright {
 	padding: 1rem;
-	background-color: whitesmoke;
+	background-color: @black;
+	a {
+		color: white;
+	}
+
 }
 
 footer > div:nth-child(1) > div {
-	padding: 3rem;
+	padding: 3%;
 }
 footer > div:nth-child(1) > div:nth-child(1) {
-	background-color: lightgray;
+	h2 {
+		// color: lighten(@green, 30%);
+		color: white;
+	}
+	text-align: center;
+	background-color: @green;
+	.button {
+		border: solid 1px white;
+		color: white;
+		&:hover {
+			background-color: lighten(@green, 10%);
+		}
+	}
 }
 footer > div:nth-child(1) > div:nth-child(2) {
-	background-color: whitesmoke;
+	background-color: lighten(@green, 15%);
 }
