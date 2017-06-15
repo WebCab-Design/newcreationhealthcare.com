@@ -23,7 +23,7 @@ html, body {
 	overflow-x: hidden;
 }
 header {
-	margin-top: 3rem;
+	// margin-top: 3rem;
 }
 main {
 }
@@ -34,6 +34,10 @@ h1 {
 }
 h2 {
 	font-size: 2rem;
+}
+h4 {
+	font-weight: 100;
+	font-size: 1.2rem;
 }
 p {
 	color: @black;
@@ -56,18 +60,17 @@ hr {
 	border-bottom: solid 1px @green;
 }
 .connect {
-	top: 0;
 	width: 100%;
-	position: fixed;
 	background-color: @transparent-gray;
 }
 .connect a {
-	padding: 1rem;
+
 }
 .media a {
 	color: black;
 	font-weight: bold;
 	background-color: whitesmoke;
+	padding: 1rem;
 }
 .media a:hover {
 	color: white;
@@ -81,8 +84,16 @@ hr {
 .media a:nth-child(3):hover {
 	background: #d94a39;
 }
-.phone a {
+.phone {
 	font-weight: bold;
+	border: 1px solid @green;
+	margin: 0.5rem;
+	padding: 0.5rem;
+	color: @green;
+	&:hover {
+		background-color: lighten(@green, 40%);
+		text-decoration: none;
+	}
 }
 .nav-bar {
 	padding: 1rem 0;
@@ -94,7 +105,7 @@ hr {
 	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
 }
 .logo {
-	padding: 2rem;
+	padding: 0.75rem;
 	font-size: 1.5rem;
 	font-weight: bold;
 }
@@ -126,7 +137,16 @@ hr {
 	background-attachment: fixed;
 }
 .paralax > div {
-	padding: 10rem 0;
+	padding-top: 15rem;
+	> div {
+		background-color: rgba(0,0,0,0.5);
+		margin-left: 3%;
+		padding: 1rem;
+		h1, h4 {
+			color: white !important;
+			text-align: left;
+		}
+	}
 }
 
 .tiles {
