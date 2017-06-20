@@ -25,14 +25,15 @@ h1 {
 	font-size: 2.5rem;
 }
 h2 {
-	font-size: 2rem;
+	font-size: 1.8rem;
+	font-weight: 100;
 }
 h3 {
 	font-size: 1.5rem;
 }
 h4 {
 	font-weight: 100;
-	font-size: 1rem;
+	font-size: 1.3rem;
 }
 p {
 	color: @black;
@@ -53,6 +54,10 @@ ul {
 hr {
 	border-top: solid 1px white;
 	border-bottom: solid 1px @green;
+}
+.wrap {
+	max-width: 1024px;
+	margin: auto;
 }
 .connect {
 	min-height: 55px;
@@ -139,36 +144,84 @@ hr {
 		}
 	}
 }
-
+.statement {
+	img {
+		width: 100%;
+	}
+	margin-top: 3rem;
+	> div:nth-child(2) {
+		margin-left: 3rem;
+	}
+	> div {
+		vertical-align: middle;
+	}
+}
 .tiles {
 	padding: 1rem;
 }
 .tiles > div > div {
 	margin: 0.25rem;
-	padding: 1.5rem;
+	padding: 2.5rem;
 	word-wrap: break-word;
-	background-color: lighten(@green, 40%);
+	background-color: @transparent-gray;
 	box-shadow: 0 3px 3px rgba(0, 0, 0, 0);
+	hyphens: auto;
 	&:hover {
 		box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
+	}
+	h4 {
+		color: @black;
 	}
 }
 
 .paragraph {
 	padding: 3rem;
+	text-align: center;
 }
-.paragraph > div > div {
-	vertical-align: middle;
+.team {
+	padding: 3rem;
+	img {
+		width: 100%;
+		object-fit: cover;
+	}
+	> div {
+		display: inline-block;
+	}
+	.overlay {
+		padding: 1rem;
+		padding-top: 1rem;
+		opacity: 0;
+		height: 63%;
+		background-color: rgba(0, 0, 0, 0.3);
+		position: relative;
+		top: -64%;
+		text-align: center;
+		width: 100%;
+		h3, p {
+			color: white;
+		}
+		&:hover {
+			opacity: 1;
+		}
+		hr {
+			margin-bottom: 1rem;
+		    border-bottom: solid 1px transparent;
+			border-right: transparent;
+		}
+	}
 }
 
-.services > h3 {
+.services > h1 {
 	margin: 3rem auto;
 	text-align: center;
 }
 
 .contact {
-	margin: 1rem;
-    padding: 1rem;
+    padding: 2rem;
+	background-color: @transparent-gray;
+	h1 {
+		text-align: center;
+	}
 }
 .contact textarea {
 	max-width: 100%;
