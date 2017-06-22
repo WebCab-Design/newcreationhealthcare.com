@@ -22,13 +22,12 @@ html, body {
 }
 h1 {
 	color: @green;
-	font-size: 2.9rem;
 	font-weight: 900;
+	font-size: 2.9rem;
 }
 h2 {
-	font-size: 1.8rem;
 	font-weight: 100;
-
+	font-size: 1.8rem;
 }
 h3 {
 	font-size: 1.5rem;
@@ -39,6 +38,7 @@ h4 {
 
 }
 p {
+	padding: 1rem;
 	color: @black;
 }
 a {
@@ -49,7 +49,9 @@ a:hover {
 	text-decoration: underline;
 }
 h1, h2, h3, h4 {
-	margin: 1rem 0;
+	margin: 1rem auto;
+	text-align: center;
+	display: block;
 	font-family: 'Roboto', sans-serif;
 }
 ul {
@@ -175,13 +177,12 @@ hr {
 .tiles > div > div {
 	margin: 0.25rem;
 	padding: 2.5rem;
+	hyphens: auto;
+	font-size: 2.4rem;
 	word-wrap: break-word;
 	background-color: @transparent-gray;
 	box-shadow: 0 3px 3px rgba(0, 0, 0, 0);
-	hyphens: auto;
-	font-size: 2.4rem;
 	&:hover {
-		// box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
 		border: 2px solid @green;
 		i {
 			color: @green;
@@ -195,16 +196,16 @@ hr {
 	}
 }
 
-.paragraph {
+.team {
 	padding: 3rem;
 	text-align: center;
 }
 
 .members {
-	margin: auto;
 	display: flex;
 	flex-wrap: wrap;
 	max-width: 620px;
+	margin: 2rem auto;
 	flex-direction: row;
 	align-content: center;
 	justify-content: center;
