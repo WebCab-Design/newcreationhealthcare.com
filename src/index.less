@@ -9,7 +9,7 @@ html, body {
 	overflow-x: hidden;
 	box-sizing: border-box;
 }
-*, *:before, *:after {
+* {
 	margin: 0;
 	padding: 0;
 	color: @black;
@@ -22,18 +22,21 @@ html, body {
 }
 h1 {
 	color: @green;
-	font-size: 2.5rem;
+	font-size: 2.9rem;
+	font-weight: 900;
 }
 h2 {
 	font-size: 1.8rem;
 	font-weight: 100;
+
 }
 h3 {
 	font-size: 1.5rem;
 }
 h4 {
-	font-weight: 100;
+	font-weight: 300;
 	font-size: 1.3rem;
+
 }
 p {
 	color: @black;
@@ -47,6 +50,7 @@ a:hover {
 }
 h1, h2, h3, h4 {
 	margin: 1rem 0;
+	font-family: 'Roboto', sans-serif;
 }
 ul {
 	list-style: none;
@@ -55,10 +59,7 @@ hr {
 	border-top: solid 1px white;
 	border-bottom: solid 1px @green;
 }
-.wrap {
-	max-width: 1024px;
-	margin: auto;
-}
+
 .connect {
 	min-height: 55px;
 }
@@ -102,8 +103,9 @@ hr {
 	}
 }
 .logo {
-	padding: 0.75rem;
-	font-size: 1.5rem;
+	> object {
+		max-height: 100px;
+	}
 	font-weight: bold;
 }
 .button {
@@ -129,7 +131,7 @@ hr {
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
-	background-position: center;
+	background-position: bottom;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 }
@@ -146,15 +148,25 @@ hr {
 	}
 }
 .statement {
-	img {
-		width: 100%;
-	}
-	margin-top: 3rem;
-	> div:nth-child(2) {
-		margin-left: 3rem;
-	}
+	background-image: url('http://res.cloudinary.com/dbc2wlvk8/image/upload/b_rgb:000000,o_76/v1498088939/new-creation-health/woman-865021_1920.jpg');
+	background-size: cover;
+	background-position: center;
+	height: 450px;
 	> div {
-		vertical-align: middle;
+		max-width: 80%;
+		margin: auto;
+		text-align: center;
+		padding: 8%;
+		h4 {
+			color: white;
+			font-weight: 400;
+			font-size: 1.6rem;
+		}
+		h2 {
+			color: white;
+			font-weight: 100;
+			font-size: 3rem;
+		}
 	}
 }
 .tiles {
@@ -167,11 +179,19 @@ hr {
 	background-color: @transparent-gray;
 	box-shadow: 0 3px 3px rgba(0, 0, 0, 0);
 	hyphens: auto;
+	font-size: 2.4rem;
 	&:hover {
-		box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
+		// box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
+		border: 2px solid @green;
+		i {
+			color: @green;
+		}
 	}
 	h4 {
 		color: @black;
+	}
+	span {
+		font-size: 0.9rem;
 	}
 }
 
@@ -249,9 +269,11 @@ hr {
 .copyright {
 	padding: 1rem;
 	background-color: @black;
-}
-.copright a {
-	color: white;
+	a {
+		color: white;
+		font-weight: 100;
+		font-size: 0.8rem;
+	}
 }
 
 footer > div:nth-child(1) > div {
@@ -273,4 +295,18 @@ footer > div:nth-child(1) > div:nth-child(1) {
 }
 footer > div:nth-child(1) > div:nth-child(2) {
 	background-color: lighten(@green, 15%);
+}
+
+@media (max-width: 400px) {
+	.statement {
+		> div {
+			padding: 3%;
+			width: 100%;
+		}
+	}
+	.paralax > div > div {
+	    padding: 1rem;
+		margin-left: 0;
+	    background-color: rgba(0, 0, 0, 0.5);
+	}
 }
