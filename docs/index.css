@@ -1,0 +1,307 @@
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+  color: #444444;
+  box-sizing: inherit;
+  font-family: sans-serif;
+  transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -webkit-transition: all 300ms ease;
+}
+h1 {
+  color: #6dbf52;
+  font-size: 2.9rem;
+  font-weight: 900;
+}
+h2 {
+  font-size: 1.8rem;
+  font-weight: 100;
+}
+h3 {
+  font-size: 1.5rem;
+}
+h4 {
+  font-weight: 300;
+  font-size: 1.3rem;
+}
+p {
+  color: #444444;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+a:hover {
+  text-decoration: underline;
+}
+h1,
+h2,
+h3,
+h4 {
+  margin: 1rem 0;
+  font-family: 'Roboto', sans-serif;
+}
+ul {
+  list-style: none;
+}
+hr {
+  border-top: solid 1px white;
+  border-bottom: solid 1px #6dbf52;
+}
+.connect {
+  min-height: 55px;
+}
+.connect-wrap {
+  width: 100%;
+  background-color: whitesmoke;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0);
+}
+.connect-wrap.active {
+  z-index: 1;
+  top: 0;
+  position: fixed;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+.media a {
+  color: #444444;
+  padding: 1rem;
+  font-weight: bold;
+}
+.media a:hover {
+  color: white;
+}
+.media a:nth-child(1):hover {
+  background: #55acee;
+}
+.media a:nth-child(2):hover {
+  background: #3b5998;
+}
+.media a:nth-child(3):hover {
+  background: #d94a39;
+}
+.phone {
+  color: white;
+  background-color: #6dbf52;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  font-weight: bold;
+  border-radius: 3px;
+  border: 1px solid #6dbf52;
+  font-size: 1.1rem;
+}
+.phone:hover {
+  text-decoration: none;
+  background-color: #ebf6e7;
+}
+.logo {
+  font-weight: bold;
+}
+.logo > object {
+  max-height: 100px;
+}
+.button {
+  width: auto;
+  margin: 1rem 0;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 1px;
+  padding: 0.5rem 1rem;
+  display: inline-block;
+  border: solid 1px #444444;
+  background-color: transparent;
+}
+.button:hover {
+  color: white;
+  text-decoration: none;
+  background-color: #444444;
+}
+.top {
+  padding: 3rem;
+}
+.paralax {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.paralax > div {
+  padding-top: 15rem;
+}
+.paralax > div > div {
+  padding: 1rem;
+  margin-left: 3%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.paralax > div > div h1,
+.paralax > div > div h2 {
+  color: white;
+  text-align: left;
+}
+.statement {
+  background-image: url('http://res.cloudinary.com/dbc2wlvk8/image/upload/b_rgb:000000,o_76/v1498088939/new-creation-health/woman-865021_1920.jpg');
+  background-size: cover;
+  background-position: center;
+  background-position-y: 30%;
+  height: 450px;
+}
+.statement > div {
+  max-width: 80%;
+  margin: auto;
+  text-align: center;
+  padding: 8%;
+}
+.statement > div h4 {
+  color: white;
+  font-weight: 400;
+  font-size: 1.6rem;
+}
+.statement > div h2 {
+  color: white;
+  font-weight: 100;
+  font-size: 3rem;
+}
+.tiles {
+  padding: 1rem;
+}
+.tiles > div > div {
+  margin: 0.25rem;
+  padding: 2.5rem;
+  word-wrap: break-word;
+  background-color: rgba(137, 137, 137, 0.1);
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0);
+  hyphens: auto;
+  font-size: 2.4rem;
+}
+.tiles > div > div:hover {
+  border: 2px solid #6dbf52;
+}
+.tiles > div > div:hover i {
+  color: #6dbf52;
+}
+.tiles > div > div h4 {
+  color: #444444;
+}
+.tiles > div > div span {
+  font-size: 0.9rem;
+}
+.paragraph {
+  padding: 3rem;
+  text-align: center;
+}
+.team {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+}
+.team > div {
+  margin: 0.25rem;
+  position: relative;
+}
+.team > div > img {
+  width: 300px;
+  display: block;
+}
+.team > div > div {
+  top: 0;
+  left: 0;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  display: flex;
+  position: absolute;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.team > div > div h3,
+.team > div > div p {
+  color: white;
+}
+.team > div > div hr {
+  margin: 0.5rem;
+  border-bottom: solid 1px transparent;
+}
+.team > div > div:hover {
+  opacity: 1;
+}
+.services > h1 {
+  text-align: center;
+}
+.contact {
+  padding: 2rem;
+  background-color: rgba(137, 137, 137, 0.1);
+}
+.contact h1 {
+  text-align: center;
+}
+.contact textarea {
+  max-width: 100%;
+  transition: none;
+}
+.contact input,
+.contact textarea {
+  width: 100%;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  border-width: 1px;
+  border-color: #444444;
+}
+.copyright {
+  padding: 1rem;
+  background-color: #444444;
+}
+.copyright a {
+  color: white;
+  font-weight: 100;
+  font-size: 0.8rem;
+}
+footer > div:nth-child(1) > div {
+  padding: 3%;
+}
+footer > div:nth-child(1) > div:nth-child(1) {
+  text-align: center;
+  background-color: #6dbf52;
+}
+footer > div:nth-child(1) > div:nth-child(1) .button {
+  color: white;
+  border: solid 1px white;
+}
+footer > div:nth-child(1) > div:nth-child(1) .button:hover {
+  background-color: #8ccd77;
+}
+footer > div:nth-child(1) > div:nth-child(1) h2 {
+  color: white;
+}
+footer > div:nth-child(1) > div:nth-child(2) {
+  background-color: #9cd48a;
+}
+footer > div:nth-child(1) > div:nth-child(2) h2 {
+  color: white;
+}
+@media (max-width: 400px) {
+  .statement > div {
+    padding: 3%;
+    width: 100%;
+  }
+  .paralax > div > div {
+    padding: 1rem;
+    margin-left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .paralax {
+    background-position-y: 0 !important;
+  }
+}

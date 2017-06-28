@@ -72,6 +72,7 @@ hr {
 	box-shadow: 0 1px 3px rgba(0, 0, 0, 0);
 }
 .connect-wrap.active {
+	z-index: 1;
 	top: 0;
 	position: fixed;
 	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
@@ -94,11 +95,15 @@ hr {
 	background: #d94a39;
 }
 .phone {
-	color: @green;
+	color: white;
+	background-color: @green;
 	margin: 0.5rem;
 	padding: 0.5rem;
 	font-weight: bold;
+	border-radius: 3px;
 	border: 1px solid @green;
+	font-size: 1.1rem;
+
 	&:hover {
 		text-decoration: none;
 		background-color: lighten(@green, 40%);
@@ -153,6 +158,7 @@ hr {
 	background-image: url('http://res.cloudinary.com/dbc2wlvk8/image/upload/b_rgb:000000,o_76/v1498088939/new-creation-health/woman-865021_1920.jpg');
 	background-size: cover;
 	background-position: center;
+	background-position-y: 30%;
 	height: 450px;
 	> div {
 		max-width: 80%;
@@ -244,7 +250,6 @@ hr {
 }
 
 .services > h1 {
-	margin: 3rem auto;
 	text-align: center;
 }
 
@@ -296,6 +301,9 @@ footer > div:nth-child(1) > div:nth-child(1) {
 }
 footer > div:nth-child(1) > div:nth-child(2) {
 	background-color: lighten(@green, 15%);
+	h2 {
+		color: white;
+	}
 }
 
 @media (max-width: 400px) {
@@ -309,5 +317,8 @@ footer > div:nth-child(1) > div:nth-child(2) {
 	    padding: 1rem;
 		margin-left: 0;
 	    background-color: rgba(0, 0, 0, 0.5);
+	}
+	.paralax {
+		background-position-y: 0 !important;
 	}
 }
