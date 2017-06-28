@@ -17,12 +17,12 @@ body {
 }
 h1 {
   color: #6dbf52;
-  font-size: 2.9rem;
   font-weight: 900;
+  font-size: 2.9rem;
 }
 h2 {
-  font-size: 1.8rem;
   font-weight: 100;
+  font-size: 1.8rem;
 }
 h3 {
   font-size: 1.5rem;
@@ -32,6 +32,7 @@ h4 {
   font-size: 1.3rem;
 }
 p {
+  padding: 1rem;
   color: #444444;
 }
 a {
@@ -45,7 +46,9 @@ h1,
 h2,
 h3,
 h4 {
-  margin: 1rem 0;
+  margin: 1rem auto;
+  text-align: center;
+  display: block;
   font-family: 'Roboto', sans-serif;
 }
 ul {
@@ -60,6 +63,7 @@ hr {
 }
 .connect-wrap {
   width: 100%;
+  z-index: 1000;
   background-color: whitesmoke;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0);
 }
@@ -175,11 +179,11 @@ hr {
 .tiles > div > div {
   margin: 0.25rem;
   padding: 2.5rem;
+  hyphens: auto;
+  font-size: 2.4rem;
   word-wrap: break-word;
   background-color: rgba(137, 137, 137, 0.1);
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0);
-  hyphens: auto;
-  font-size: 2.4rem;
 }
 .tiles > div > div:hover {
   border: 2px solid #6dbf52;
@@ -193,26 +197,28 @@ hr {
 .tiles > div > div span {
   font-size: 0.9rem;
 }
-.paragraph {
+.team {
   padding: 3rem;
   text-align: center;
 }
-.team {
+.members {
   display: flex;
   flex-wrap: wrap;
+  max-width: 620px;
+  margin: 2rem auto;
   flex-direction: row;
   align-content: center;
   justify-content: center;
 }
-.team > div {
+.members > div {
   margin: 0.25rem;
   position: relative;
 }
-.team > div > img {
+.members > div > img {
   width: 300px;
   display: block;
 }
-.team > div > div {
+.members > div > div {
   top: 0;
   left: 0;
   opacity: 0;
@@ -226,15 +232,15 @@ hr {
   justify-content: center;
   background-color: rgba(0, 0, 0, 0.6);
 }
-.team > div > div h3,
-.team > div > div p {
+.members > div > div h3,
+.members > div > div p {
   color: white;
 }
-.team > div > div hr {
+.members > div > div hr {
   margin: 0.5rem;
   border-bottom: solid 1px transparent;
 }
-.team > div > div:hover {
+.members > div > div:hover {
   opacity: 1;
 }
 .services > h1 {
