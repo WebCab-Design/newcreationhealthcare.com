@@ -1,6 +1,7 @@
 # Custom
 dist
 dev
+.DS_Store
 
 # Logs
 logs

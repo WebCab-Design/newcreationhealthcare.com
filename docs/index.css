@@ -288,13 +288,15 @@ footer > div:nth-child(1) > div:nth-child(1) .button {
 footer > div:nth-child(1) > div:nth-child(1) .button:hover {
   background-color: #8ccd77;
 }
-footer > div:nth-child(1) > div:nth-child(1) h2 {
+footer > div:nth-child(1) > div:nth-child(1) h2,
+footer > div:nth-child(1) > div:nth-child(1) p {
   color: white;
 }
 footer > div:nth-child(1) > div:nth-child(2) {
   background-color: #9cd48a;
 }
-footer > div:nth-child(1) > div:nth-child(2) h2 {
+footer > div:nth-child(1) > div:nth-child(2) h2,
+footer > div:nth-child(1) > div:nth-child(2) p {
   color: white;
 }
 @media (max-width: 400px) {
